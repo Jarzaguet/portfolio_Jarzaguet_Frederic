@@ -208,16 +208,17 @@ header ul li a.active:before
 .icons
 {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: right;
+    align-content: right;
+    align-items: right;
     padding: 50px 0;
 }
 
 .icons .controls
 {
-    position: relative;
+    position: right;
+    text-align: right;
     display: flex;
-
 }
 
 
@@ -233,7 +234,7 @@ header ul li a.active:before
     list-style: none;
     margin-left: 20px;
     cursor: pointer;
-    filter: invert(1);
+    filter: invert(0);
     transition: 0.3s ease-in-out;
 }
 
