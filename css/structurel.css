@@ -1,0 +1,254 @@
+* {
+    margin:0;
+    padding:0;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+
+.container {
+    position: relative;
+    padding: 0 100px;
+    min-height: 100vh;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25vw;
+    height: 100%;
+    background: rgb(177, 171, 171);
+    z-index: -2;
+}
+
+.container:after {
+    content: 'Bachelor Informatique';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18vw;
+    z-index: -2;
+    font-weight: 700;
+    color: #000;
+    opacity: 0.2;
+}
+
+/*********************
+        Header
+*********************/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+header .logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+header .logo span
+{
+    color: rgb(230, 19, 19);
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li 
+{
+    list-style: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+header ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/*
+header ul li:nth-child(3) a,
+header ul li:nth-child(4) a
+{
+    color: #fff;
+}*/
+
+header ul li a:before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ff7272;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+
+header ul li a:hover:before,
+header ul li a.active:before
+{
+    width: 100px;
+}
+
+
+
+
+
+.conteneurPresentation {
+    width: 99vw;
+    display: flex;
+    flex-direction: row ;
+    justify-content: normal;
+    align-items: normal;
+    align-content: normal;
+}
+
+.conteneurArticle {
+    width: 99vw;
+    display: flex;
+    flex-direction: row ;
+    justify-content: left;
+    align-items: normal;
+    align-content: normal;
+    margin-right:0;
+}
+
+.conteneurPhoto {
+    width: 30vw;
+    margin:2%;
+    justify-content: center;
+    align-content: normal;
+}
+
+img
+{
+    position: absolute;
+    display:flex;
+    top: 2%;
+    right: 3%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.a1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin:3%;
+}
+
+.a2 {
+    width: 99vw;
+    font-size: 30px;
+    font-weight: bold;
+    margin:0;
+    text-align: center;
+}
+
+
+.conteneurSection {
+    width: 99vw;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    margin-top:2%;
+}
+
+.conteneurExperience {
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center; 
+    margin: 1rem 0rem 1rem 1rem;
+}
+
+.doubleDate {
+    width: 25%;
+    display: flex;
+    flex-direction: column ;
+}
+
+.metier {
+    width: 35vw;
+    display: flex;
+    flex-direction: column ;
+    justify-content: left;    
+}
+
+.employeur {
+    width: 40%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: right; 
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+}
+
+.li1 {
+    padding-left: 15%;
+    display: flex;
+}
+
+
+.footer {
+    width: 99vw;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+    font-size: 1em;
+    margin-top: 5%;
+}
+
+.conteneurFooter {
+    width: 100%;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: normal;
+    align-content: normal;
+}
+
+.a3 {
+    width: 50%;
+    color: rgb(0, 0, 0);
+}
+
+h1 {
+    border: 3px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    width: 95%;
+    margin: 1%;
+ 
+}
+
+h2 {
+    font-size: 25px;
+}
+
+
