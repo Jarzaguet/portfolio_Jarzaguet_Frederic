@@ -213,7 +213,6 @@ header ul li a.active:before
     padding: 50px 0;
 }
 
-.icons .sci,
 .icons .controls
 {
     position: relative;
@@ -221,21 +220,14 @@ header ul li a.active:before
 
 }
 
-.icons .sci li {
-    list-style: none;
-    margin-right: 30px;
-}
 
-.icons .sci li img,
 .icons .controls li img {
     display: inline-block;
     max-height: 24px;
     transition: 0.3s ease-in-out;
 }
 
-.icons .sci li:hover img {
-    transform: translateY(-10px);
-}
+
 
 .icons .controls li {
     list-style: none;
