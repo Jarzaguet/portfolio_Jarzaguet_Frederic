@@ -22,13 +22,13 @@
 }
 
 .container:after {
-    content: 'Info B1 C';
+    content: 'Bachelor Informatique';
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 18vw;
+    font-size: 10vw;
     z-index: -2;
-    font-weight: 700;
+    font-weight: 400;
     color: #000;
     opacity: 0.2;
 }
@@ -78,13 +78,6 @@ header ul li a {
     text-decoration: none;
 }
 
-/*
-header ul li:nth-child(3) a,
-header ul li:nth-child(4) a
-{
-    color: #fff;
-}*/
-
 header ul li a:before
 {
     content: '';
@@ -104,6 +97,41 @@ header ul li a.active:before
     width: 100px;
 }
 
+/********************
+        footer
+********************/
+
+
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+footer ul {
+    position: relative;
+    display: flex;
+}
+
+footer ul li 
+{
+    list-style: none;
+    margin: 0 20px;
+    text-align: center;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 4px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
 
 /********************
         section
@@ -117,6 +145,23 @@ header ul li a.active:before
     align-items: center;
     margin-top: 50px;
 }
+
+
+.mentionsLegales {
+    display: flex;
+
+    width: 30vw;
+    margin:2%;
+    justify-content: center;
+    align-content: normal;
+
+    display:flex;
+    top: 2%;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+
+}
+
 
 .content .BannerText {
     position: relative;
@@ -150,7 +195,6 @@ header ul li a.active:before
 .content .BannerText a {
     position: relative;
     display: inline-block;
-    /*text-transform: uppercase;*/
     font-weight: 700;
     color: #333;
     letter-spacing: 1px;
@@ -202,10 +246,8 @@ header ul li a.active:before
         ICON
 ******************/
 
-
-
-
 .icons
+
 {
     display: flex;
     justify-content: right;
