@@ -78,13 +78,6 @@ header ul li a {
     text-decoration: none;
 }
 
-/*
-header ul li:nth-child(3) a,
-header ul li:nth-child(4) a
-{
-    color: #fff;
-}*/
-
 header ul li a:before
 {
     content: '';
@@ -201,9 +194,6 @@ header ul li a.active:before
 /******************
         ICON
 ******************/
-
-
-
 
 .icons
 {
