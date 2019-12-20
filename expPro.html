@@ -16,18 +16,129 @@
     <div class="container">
     
         <header id="navbar">
-            <a href="#" class="logo">Portefolio <span>JARZAGUET Frédéric</span></a>
-                <ul>
-                    <li><a href="index.html" class="active">PRESENTATION</a></li>
-                    <li><a href="expPro.html">EXPERIENCES PROFESSIONNELLES</a></li>
-                    <li><a href="formation.html">FORMATIONS</a></li>
-                    <li><a href="expDiv.html">EXPERIENCES DIVERSES</a></li>
-                    <li><a href="contReco.html">CONTACT / RECOMMANDATIONS</a></li>
-                    <li><a href="cvStructurel.html">CV</a></li>
-                    <li><a href="project.html">PROJECTS</a></li>
+        <a class="logo"><span>Portfolio</span></a>
+            <ul>
+                <li><a href="index.html" class="active">PRESENTATION</a></li>
+                <li><a href="expPro.html">EXPERIENCES PROFESSIONNELLES</a></li>
+                <li><a href="formation.html">FORMATIONS</a></li>
+                <li><a href="expDiv.html">EXPERIENCES DIVERSES</a></li>
+                <li><a href="contReco.html">CONTACT / RECOMMANDATIONS</a></li>
+                <li><a href="cvStructurel.html">CV</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+            </ul>
+            <span class="menuIcon" onclick="menuToggle();"></span>
+        </header>
+            
+    
+        <div class="content">
+            <div class="BannerText" id="slideshowText">
+                <div class="active">
+                    <h2>2009 - 2018 Responsable d’affaires, FEEDBACK Paris</h2>    
+                    <ul>
+                        <li>►2.5 ans, Responsable projet LINKY GAZPARD, Etude marché, réponse et chiffrage appel d'offre, formation et dotation EPI</li>
+                        <li>►9 mois Responsable projet prévention des ouvrages gaz (6 collaborateurs) Région centre</li>
+                        <li>►6 mois, Responsable projet contrôle installation gaz et identification du matériel sur 43 départements (26 collaborateurs).</li>
+                        <li>►1 an, Responsable petits projets ponctuels sur toute la France</li>
+                        <li>►1,5 an, Responsable région grand ouest (17 collaborateurs), Marchés relève JAUNE</li>
+                        <li>►2,5 ans, Responsable Loire atlantique (40 collaborateurs), Marché relève BLEU</li>
+                        
+                    </ul>
+                    <a href="#">CV complet</a>
+                </div>
+
+                <div>     
+                    <h2>2006 - 2009 ESP - Loire Atlantique </h2>
+                    <p>
+                     
+                    </p>
+                    <a href="#">CV complet</a>
+                </div>
+
+                <div>    
+                    <h2>2002 - 2002 Ambassadeur du tri sélectif  SCHAFER, Pays Rochefortais</h2>
+                    <ul>
+                        <li>► 3 mois, Technicien de recensement et collecte données (professionnels et particuliers) puis saisie et traitement des données</li>
+                        <li>► 6 mois, Encadrement des chauffeurs lors de la distribution des containers (professionnels et particuliers)</li>
+                        
+                    </ul>
+                    <a href="#">CV complet</a>
+                </div>
+                
+                <div>
+                    <h2>1998 – 2001 Chef d’entreprise d’un magasin d’informatique FUN ND PLAY – Rochefort</h2>
+                    <ul>
+                        <li>► Administration et gestion salle de jeu en réseauLAN (22 postes)</li>
+                        <li>► vente hard et soft. Assemblagesur demande.</li>
+                        
+                    </ul>
+                    <a href="#">CV complet</a>
+                </div>
+
+            </div>
+    
+            <div class="BannerImage" id="slideshow"> 
+                <img src="image/img1.png" class="active">
+                <img src="image/img2.png">
+                <img src="image/img3.png">
+                <img src="image/img4.png">
+            </div>
+
+            <div class="icons">
+                <ul class="controls">
+                    <li><a><img src="image/left.png" onclick="nextSlide();nextSlideText();"></a></li>
+                    <li><a><img src="image/right.png" onclick="prevSlide();prevSlideText();"></a></li>
                 </ul>
-                <span class="menuIcon" onclick="menuToggle();"></span>
-            </header>
+            </div>
+
+        </div>
+        
+        <footer>
+            
+            <ul>
+                <li><a href="mentionsLegales.html">MENTIONS LEGALES</a></li>
+            </ul>
+    
+        </footer>
+
+
+
+        <script type="text/javascript">
+            var slideshow = document.getElementById('slideshow');
+            var slides = slideshow.getElementsByTagName('img');
+            var index = 0;
+    
+    
+            function nextSlide(){
+                slides[index].classList.remove('active');
+                index = (index + 1) % slides.length;
+                slides[index].classList.add('active');
+            }
+    
+            function prevSlide(){
+                slides[index].classList.remove('active');
+                index = (index - 1 + slides.length) % slides.length;
+                slides[index].classList.add('active');
+            }
+    
+            var slideshowText = document.getElementById('slideshowText');
+            var slidesText = slideshowText.getElementsByTagName('div');
+            var i = 0;
+    
+            function nextSlideText(){
+                slidesText[i].classList.remove('active');
+                i = (i + 1) % slidesText.length;
+                slidesText[i].classList.add('active');
+            }
+    
+            function prevSlideText(){
+                slidesText[i].classList.remove('active');
+                i = (i - 1 + slidesText.length) % slidesText.length;
+                slidesText[i].classList.add('active');
+            }
+    
+    
+        </script>
+    
 
 
 </body>
