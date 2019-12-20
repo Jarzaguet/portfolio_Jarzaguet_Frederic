@@ -21,15 +21,71 @@
                 <li><a href="index.html" class="active">PRESENTATION</a></li>
                 <li><a href="expPro.html">EXPERIENCES PROFESSIONNELLES</a></li>
                 <li><a href="formation.html">FORMATIONS</a></li>
-                <li><a href="#">EXPERIENCES DIVERSES</a></li>
-                <li><a href="#">CONTACT / RECOMMANDATIONS</a></li>
-                <li><a href="#">CV</a></li>
-                <li><a href="#">PROJECTS</a></li>
+                <li><a href="expDiv.html">EXPERIENCES DIVERSES</a></li>
+                <li><a href="project.html">PROJECTS</a></li>
+                <li><a href="contReco.html">CONTACT / RECOMMANDATIONS</a></li>
+                <li><a href="cvStructurel.html">CV</a></li>
             </ul>
             <span class="menuIcon" onclick="menuToggle();"></span>
         </header>
-            
+
+<div class="contReco">
+
+        <div class="content">
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="name">Nom   :</label>
+                    <input type="text" id="name" name="user_name">
+                </div>
+
+                <div>
+                    <label for="forname">Prénom :</label>
+                    <input type="text" id="name" name="user_forname">
+                </div>
+
+                <div>
+                    <label for="mail">e-mail    :</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+
+                <div>
+                    <label for="Enterprise">Enterprise :</label>
+                    <input type="text" id="name" name="user_Enterprise">
+                </div>
+
+                <div>
+                    <label for="Adresse">Adresse    :</label>
+                    <input type="text" id="name" name="user_Adresse">
+                </div>
+            </form>
+        </div>
+
+        <div class="BannerImage" id="slideshow"> 
+            <img src="image/captcha.png">
+        </div>
+
+        <div class="content">
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label for="msg">Message :</label>
+                    <textarea id="msg" name="user_message"></textarea>    
+                </div>
+            </form>
+        </div>
 
 
+        <div class="BannerImage" id="slideshow"> 
+            <img src="image/boutons.png">
+        </div>
+
+    </div>
+
+        <footer>
+            <ul>
+                <li><a href="mentionsLegales.html">MENTIONS LEGALES</a></li>
+            </ul>
+        </footer>
+
+    </div>
 </body>
 </html>
